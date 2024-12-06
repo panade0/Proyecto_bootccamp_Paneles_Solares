@@ -1,0 +1,75 @@
+*{ /* quitar la separacion de los bordes de la pantalla*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{ /* tamaño de la letra en general*/
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor{
+    padding: 60px 0; /* espacio entre secciones*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; /* si algo se sale del contenedor lo esconda */
+}
+
+header{
+    width: 100%;
+    height: 600px; 
+    background:  #0575E6;  
+    /* fallback for old browsers */
+    background-image: url('/static/imagenesps/gif\ paneles.gif'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+button {
+    position: relative;
+    left: 45%;
+    z-index: 1; /* El botón está encima del pseudoelemento */
+    background-color: rgb(48, 202, 50);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    width: 15%;
+    height: 50px; /* Ajusté la altura del botón */
+    overflow: hidden; /* Esto asegura que el pseudoelemento no sobresalga fuera del botón */
+}
+
+button::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    border-radius: 30em;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    background-image: linear-gradient(to right, #2e6132, #3c00ff);
+    transition: width 1s ease;
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido del botón */
+}
+button:hover::before {
+    width: 300%; /* El pseudoelemento se expande al 300% del botón */
+}
+
+
+div{
+    align-content: center;
+
+
+}
+
+
+
+.wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'hojas de estilo/styles.css')}}">
+    <link rel="stylesheet" href="/static/hojas de estilo/styles.css">
+    <link rel="stylesheet" href="/static/imagenesps">
+    <link rel="shortcut icon" href="/static/imagenesps/favi.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="contenedor_header">
+        <header>
+            
+            <div class="menu contentainer">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="/static/imagenesps/tresrayitas.png" class="menu-icon" alt="">
+                </label>
+                
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#principal">¿Que es?</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#beneficios">Beneficios</a>
+                        <li><a href="#recursos_pereira">Recursos en Pereira</a></li>
+                        <li><a href="#proceso_de_instalacion">Instalación</a></li>
+                        <li><a href="#photos">Empresas</a>
+                        <li><a href="#man">Mantenimiento</a></li>
+                        <li><a onclick="window.location.href='/costos'" href="#Costos">Costos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="eslogan">
+        <a>HACIA UN FUTURO MAS BRILLANTE </a>
+    </div>
+    <div class="contenedor_principal">
+        <main id="principal">
+            <p>La instalación de paneles solares en viviendas es una solución sostenible que permite generar energía a
+                partir de la radiación solar. Este sistema convierte la luz solar en electricidad mediante celdas
+                fotovoltaicas, lo que ayuda a reducir los costos de electricidad y las emisiones de carbono.</p>
+            <h1>¿Qué es un sistema de paneles solares?</h1>
+            <p>El panel solar fotovoltaico tiene la tarea de transformar la energía solar que capta a través de sus células fotovoltaicas en energía aprovechable por los consumos de la vivienda.</p>
+            <h2>Un sistema de paneles solares consta de:</h2>
+            <h3>Paneles fotovoltaicos:</h3>
+            <p>Captan la energía solar y la convierten en electricidad.</p>
+            <h3>Inversor:</h3>
+            <p>Convierte la corriente directa generada por los paneles en corriente alterna, que es la utilizada en el
+                hogar.</p>
+            <h3>Batería (opcional):</h3>
+            <p>Almacena la energía generada por el panel y la utiliza durante las horas de uso del sistema sin luz.</p>
+            <h3>Estructuras de soporte:</h3>
+            <p>Aseguran los paneles en el techo o suelo</p>
+            <h3>Cableado y Sistema de monitoreo:</h3>
+            <p>Facilitan la conexión y el control del sistema.</p>
+        </main>
+        <section id="recursos">
+            <h1>Recursos y Materiales</h1>
+            <p>Recursos y materiales para la instalación en Colombia (Pereira)
+                En Pereira, al igual que en otras zonas de Colombia, el acceso a materiales y recursos para instalar
+                paneles solares es amplio debido al aumento de la demanda de energías renovables. Los principales
+                materiales son:</p>
+            <h3>Paneles Solares:</h3>
+            <p>Disponibles en versiones monocristalinas (mayor eficiencia) y policristalinas (más económicas).</p>
+            <h3>Inversores:</h3>
+            <p>Lo más común son los inversores de cadena y microinversores.</p>
+            <h3>Baterías:</h3>
+            <p>Opcionales para sistemas con almacenamiento; las de litio son las mas recomendadas.</p>
+            <h3>Cableado especializado:</h3>
+            <p>Resistente a los rayos UV y con baja pérdida de energía.</p>
+            <h3>conttroladores de carga (en sistemas con baterias):</h3>
+            <p>Regulan el flujo de energía hacia las baterías.</p>
+        </section>
+        <section id="beneficios">
+            <h2>Beneficios</h2>
+            
+            <h3> Entre sus beneficios están: </h3>
+            
+            <ol>
+               <li>Es renovable.</li>
+               <li> Es una fuente de energía ilimitada. </li>
+                <li> Es la fuente de energía más limpia y no pone en peligro ni incrementa el calentamiento global,
+                    debido a que no produce gases de efecto invernadero ni subproductos peligrosos para el medio
+                    ambiente.</li>
+            <img src="/static/imagenesps/energia ilimitada.jpg" id="Acciones">
+
+                <li> Tiene un bajo costo de aprovechamiento, tras la inversión inicial en la fabricación de los
+                    componentes y la instalación, que es la que puede resultar más costosa.</li>
+                <li>Se puede producir energía limpia que resulta más económica que la que se adquiere por medio de la
+                    red.</li>
+                <li>Está disponible en todo el planeta, por lo que se convierte en la mejor forma de proveer
+                    electricidad a lugares aislados, donde el costo de instalar líneas de distribución de electricidad
+                    es demasiado alto.</li>
+                <li>La tecnología permite convertir la energía solar en electricidad por medio de dispositivos
+                    fotovoltaicos y de energía solar térmica.</li>
+                <li>Contribuye al desarrollo sostenible.</li>
+                <li>Genera empleo en las zonas donde se instala.</li>
+                <li>Reduce el uso de combustibles fósiles.</li>
+                <li>Reduce las importaciones energéticas.</li>
+                </ol>
+                
+            </p>
+            <h3> ¿En que se utiliza la energía solar? </h3>
+            <p> 
+                <div>
+                <ol>
+               <li>luminación solar a través de paneles solares para hogares y empresas:Esta permite mejorar la eficiencia en el consumo de energía y reducir los costos en electricidad, lo que la convierte en una energía alternativa. Las tendencias arquitectónicas adoptan cada vez más este tipo de iluminación como base del diseño sostenible.</li>
+               <li>Calefacción: Los calentadores solares aprovechan la energía del sol y la transforman en energía térmica mediante el uso de agua o aire. Los sistemas de calefacción pueden ser pasivos, utilizan la circulación natural, o activos, utilizan las bombas para hacer circular el agua y generar calor. </li>
+               <li>Transportes impulsados por energía solar: Están impulsados por energía fotovoltaica. Entre ellos se incluyen vehículos eléctricos movidos por energía obtenida por paneles solares, autobuses y ferrocarriles. También existen carreteras accionadas con luz solar. </li>
+               <li> En tecnología: como cargadores solares, útiles para cargar celulares, tablets, computadores, linternas u otros electrodomésticos que funcionan con tecnología solar como secadores, radios, lámparas, entre otros. </li>
+               <li>Compañías suministradoras de electricidad: La energía solar fotovoltaica se puede usar para generar  gran cantidad de energía con el fin de venderla a compañías que tienen como negocio el suministro de energía. </li>
+               <li> Lugares remotos de difícil acceso: Es ideal para proveer de energía a aquellos lugares lejanos, con bajos índice de desarrollo, donde tienen dificultades para tener energía eléctrica. </li>
+                </ol>
+            </div>
+            </p>
+        </section>
+
+        <section id="recursos_pereira">
+            <h2>Recursos Disponibles en Pereira</h2>
+            <p>Pereira tiene un excelente potencial para el uso de energía solar debido a su posición geográfica.
+                Algunas características locales incluyen:</p>
+            <h3>Radiación solar promedio:</h3>
+            <p>Entre 4 y 5 kWh/m² por día, lo cual es duficiente para la generación eficiente de energía.</p>
+            <h3>Empresas instaladoras:</h3>
+            <p>Varias empresas en Pereira oferecen servicios de instalación llave en mano, como Celsia y otros locales
+                especializados en energías renovables.</p>
+            <h3>Incentivos gubernamentales:</h3>
+            <p>En Colombia, la ley 1715 de 2014 promueve el uso de energía renovables y otorga beneficios tributarios
+                como deducciones en el impuesto de renta y extenciones en IVA y aranceles para los equipos</p>
+        </section>
+        <section id="proceso_de_instalacion">
+            <h1>Proceso Básico de Instalación</h1>
+            <h3>Estudio Técnico:</h3>
+            <p>Evaluar el consumo eléctrico del hogar. Realizar un análisis de sombra y orientación del techo.</p>
+            <h3>Diseño del Sistema:</h3>
+            <p>Determine la cantidad de paneles y la capacidad necesaria.</p>
+            <h3>Instalación:</h3>
+            <p>Colocar las estructuras, paneles y cableado. Configurar el inversor y las baterías (si aplica).</p>
+            <h3>conexión a la red o sistema autonomo:</h3>
+            <p>Integrar el sistema a la red electrica o dejarlo independiente.</p>
+            <h3>Pruebas y puesta en marcha:</h3>
+            <p>Verifique el funcionamiento del sistema</p>
+        </section>
+
+        <section class= "photos" id="photos">
+        <h2>Empresas con sistemas fotovoltaicos</h2>
+        <div class="slider">
+            <div class="slides">
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelaeropuerto.jpg/" alt="Imagen 1">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:544 <br>
+                        NUMERO DE PANELES:1.454 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:741 <br>
+                        TON CO2 DEJADO DE EMITIR: 282
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelalcides.jpg" alt="Imagen 2">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:41 <br>
+                        NUMERO DE PANELES:112 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:55 <br>
+                        TON CO2 DEJADO DE EMITIR: 21</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelcerritosdelmar.jpg" alt="Imagen 3">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:33 <br>
+                        NUMERO DE PANELES:84<br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:45 <br>
+                        TON CO2 DEJADO DE EMITIR: 17
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelexpofuturo.png" alt="Imagen 4">
+                    <div class="description">
+                        POTENCIA PICO [kWp]: 100<br>
+                        NUMERO DE PANELES: 232<br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:110 <br>
+                        TON CO2 DEJADO DE EMITIR: 65</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelmegacentro.jpg" alt="Imagen 5">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:146 <br>
+                        NUMERO DE PANELES:320 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:142 <br>
+                        TON CO2 DEJADO DE EMITIR: 52</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelukumari.jpg" alt="Imagen 6">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:225 <br>
+                        NUMERO DE PANELES:577 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:306 <br>
+                        TON CO2 DEJADO DE EMITIR: 117</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelulibre.png" alt="Imagen 7">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:210 <br>
+                        NUMERO DE PANELES:488 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:310 <br>
+                        TON CO2 DEJADO DE EMITIR: 118</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/panelutp.jpg" alt="Imagen 8">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:600 <br>
+                        NUMERO DE PANELES:2070 <br>
+                        ENERGIA GENERADA PRIMER AÑO[MWh]:704 <br>
+                        TON CO2 DEJADO DE EMITIR: 336</div>
+                </div>
+
+                <div class="slide">
+                    <img src="/static/imagenesps/granja.jpg" alt="Imagen 9">
+                    <div class="description">
+                        POTENCIA PICO [kWp]:6.2 <br>
+                        NUMERO DE PANELES:15.660 <br>
+                        ENERGIA GENERADA PRIMER AÑO[GWh]:10 <br>
+                        TON CO2 DEJADO DE EMITIR: 15.280</div>
+                </div>
+
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+        <div>
+        <section>  
+        <div class="continuacion" id="man"></div>
+  
+        <h1>Mantenimiento a paneles solares</h1>
+       
+        <nav>
+            <ol>
+            <li>Acciones previas </li>
+            <li>Equipo de protección necesario </li>
+            <li>Tipos de mantenimiento </li>
+            <li>Mantenimiento a paneles solares </li>
+            <li>Consejos extra </li>
+            </ol>
+        </nav>
+    </section>
+        <section class="parte1">
+          
+            <h2>1. Acciones previas</h2>
+            
+            <p>- Cómo mencionamos al principio, antes de darle mantenimiento a los paneles solares, es imprescindible que conozcas todos los elementos que intervienen para que se ensucien o su nivel de producción disminuya.
+                Algunos de los aspectos que debes tomar en cuenta antes de iniciar el mantenimiento son:</p>
+                <img src="/static/imagenesps/ACCIONES.png" alt="Acciones" id="Acciones">
+                <h3>La complejidad de instalación</h3>
+                <P>- Es necesario que tomes en cuenta la complejidad de la instalación a la cual le darás mantenimiento porque de esta dependerá qué tipo de mantenimiento requiere y la manera de ejecutarlo, las herramientas, el equipo de seguridad, etc.</P>
+                <h3>Climatología de la zona</h3></li>
+                <p>- Este aspecto te ayudará a terminar el tiempo en que se le dará el mantenimiento al sistema así como la ropa y equipo que serán adecuados.</p>
+                <h3>Contaminación del área </h3>
+                <p>- Toma en cuenta igualmente los factores contaminantes es decir si en el entorno hay muchos químicos, polvos, chimeneas, etc. para elegir las protecciones adecuadas.</p>
+                <h3>Desconectar el sistema </h3>
+                <p>- Es imprescindible que si dentro del mantenimiento vas a hacer una limpieza con algún líquido como lavar los paneles, la mejor opción es apagar el sistema durante el tiempo que lo estés limpiando.</p>
+                <h3>Revisión visual </h3>
+                <p>- Antes de realizar cualquier tipo de mantenimiento mecánico o manual, se sugiere hacer un seguimiento de revisión visual, es decir, verificar si los elementos del sistema aún se mantienen en  buen estado.</p>
+                       
+        </section>
+        <section class="parte2">
+           
+                <h2>2. Equipos de protección necesario</h2>
+            
+                <p>- Un aspecto fundamental antes de comenzar con el mantenimiento a paneles solares es el Equipo de Seguridad Personal (ESP) qué debes utilizar, esto con el fin de evitar posibles riesgos durante el proceso de mantenimiento.
+                    Asegurate que tu equipo lo utilize en todo momento:</p>
+                    <img src="/static/imagenesps/EQUIPO DE SEGURIDAD.png" alt="equipo de protección" id="seguridad">
+                <ol>
+                <li>lentes protectoras</li>
+                <li>Cubrebocas</li>
+                <li>Casco de protección</li>
+                <li>Protecciones de extremidades</li>
+                <li>Guantes de proteccion</li>
+                <li>Chaleco</li>
+                <li>Cables de vida arnes</li>
+                <Li>Zapatos dielectricos</Li>
+                </ol>
+    </div>
+        </section>
+        <section class="parte3">
+            <h2>3. Tipos de mantenimiento</h2>
+            <p>Una correcta manipulación y gestión del mantenimiento de los sistemas fotovoltaicos tienen como consecuencia una continuidad operacional más efectiva. 
+                Un plan de mantenimiento adecuado se divide en 3 principales componentes.</p>
+            <dl> 
+                <dt> Mantenimiento preventivo:</dt>
+                    <br>
+                <dd>  <img src="/static/imagenesps/preventivo.jpg" alt="preventivo" id="preventivo"> <br>- El mantenimiento preventivo busca evitar las consecuencias de las fallas del sistema y los equipos que intervienen en su rendimiento.
+                    Por otro lado, se realiza este tipo de mantenimiento para aumentar la vida útil del sistema fotovoltaico.</dd>
+                    <br>
+                <dt>Mantenimiento correctivo:</dt>
+                    <br>
+                <dd> <img src="/static/imagenesps/13_SEPTIEMBRE_MAXIMIZA_TU_AHORRO_COMO_DAR_MANTENIMIENTO_A_TUS_PANELES_SOLARES.webp" alt="correctivo" id="correctivo"> <br>- El mantenimiento correctivo consiste en dar reparación y/o sustitución de partes que sean necesarias para que el sistema fotovoltaico funcione adecuadamente y se realicen acciones preventivas y reducir las reparaciones inesperadas. </dd>
+                    <br>
+                <dt>Mantenimiento predictivo:</dt>
+                    <br>
+                <dd> <img src="/static/imagenesps/optimizacion-de-plantas-solares-por-monitoreo.webp" alt="predictivo" id="predictivo"> <br>- Otro tipo de mantenimiento a paneles solares, es el predictivo, el cual consiste en la práctica de utilizar información en tiempo real para realizar medidas preventivas de limpieza o mantenimientos correctivos para anticipar futuras fallas. <br> Se busca reducir el impacto en los costos de mantenimiento correctivo y brindar una mayor vida útil de paneles solares.
+                    Se requiere de monitoreos constantes en tiempo real. </dd>
+            </dl>
+        </section>
+        <section id="parte4">
+            <h2>4. Mantenimiento a paneles solares</h2>
+         <p>Antes de explicar los pasos para el mantenimiento a paneles solares te damos algunas acciones que debes evitar, con el fin de no causar daño a los módulos solares de tu cliente.</p>
+<img src="/static/imagenesps/MANTENIMIENTO.png" alt="Mantenimiento" id="mantenimiento">
+         <ol>
+            <li>No utilices esponjas o paños abrasivos.</li>
+            <li>Evita utilizar detergentes químicos agresivos. </li>
+            <li>No hagas demasiado presión.</li>
+            <li>Evita los lavados a presión. </li>
+            <li>No utilices agua fría.</li>
+            <li>Evita por completo pisar los módulos solares. </li>
+        </ol>
+            <h3>Mantenimiento a modulos solares</h3>
+                <p>Ahora que ya conoces lo que debes hacer antes y lo que debes evitar a la hora de realizar mantenimiento a paneles solares, te explicamos los 4 pasos para limpiar los paneles solares.</p>
+        <dl>
+            <dt>- Utiliza un paño suave con un poco de agua desmineralizada:</dt> 
+            <br>
+                <dd>Esto ayudará a quitar suciedad o polvo que se haya impregnado. En caso de que no cuentes con un paño también tienes la opción de utilizar un cepillo con cerdas suaves.</dd>
+            <br>
+            <dt>- Procede a realizar el lavado de los paneles con mucha delicadeza.</dt>
+            <br>
+            <dt>- Retira el exceso de agua que haya quedado.</dt>
+            <br>
+            <dt>- Pasa un paño para secar.</dt>
+        </dl>
+
+    </div>
+        </section>
+    </div>
+    <article class="comentarios" id="comentarios">
+        <h1>Comentarios</h1>
+        <label for="Comentarios">Comentario:</label>
+        <input type="text" class="coments" id="coments" placeholder="Por favor, dejanos saber tu opinion!!😊">
+        <button class="btncoments" id="btncoments">Enviar</button>
+        <ul class="addcoment" id="addcoment"></ul>
+    </article>
+    <script src="/static/archivos de script/script.js"></script>
+<aside class = "Bibliografia">
+    <h4>BIBLIOGRAFIA</h4>
+    <p>paginas referenciadas:</p>
+    <ul>
+        <li><a href="https://energiapereira.eep.com.co/SES/">Energia De Pereira</a></li>
+        <li><a href="https://www.celsia.com/es/blog-celsia/beneficios-de-la-energia-solar/">Beneficios</a></li>
+        <li><a href="https://autosolar.co/paneles-solares">Panel Solar</a></li>
+        <li><a href="https://solarama.mx/blog/mantenimiento-a-paneles-solares/">Costos</a></li>
+
+
+</aside>
+</body>
+<footer id="piepagina">
+    <h1>&copy; 2024 TODOS LOS DERECHOS RESERVADOS</h1> 
+    <h4>Creado y Producido por HACK-SQUAD CORP.</h4>  
+</footer>
+
+</html>

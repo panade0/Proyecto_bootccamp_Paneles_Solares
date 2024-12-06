@@ -1,0 +1,433 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("/static/imagenesps/2d3e8923-e99c-40b5-a42c-38ddad26e866.jpg");  
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+header {
+    position: fixed; /* Mantiene el header fijo en la parte superior */
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%; /* Hace que abarque todo el ancho */
+    height: 100px; /* Ajusta la altura según necesites */
+    background-image: linear-gradient(to right, rgba(26, 82, 26, 0.842), #000000b6);
+    background-size: cover;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    z-index: 1;
+}
+.menu{
+    min-height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_principal {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top:35px; /* Evita que el contenido quede oculto por el header */
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #ffffff, rgba(92, 241, 69, 0.699));
+    box-shadow: 2px 2px 10px 2px rgb(188, 216, 113);
+    background-color: rgb(219, 235, 198);
+
+}
+.contenedor_principal img{
+    text-align: center;
+}
+.beneficios2{
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+    .beneficios2 li{
+    display: inline-block;
+    margin-right: 0px;
+    padding: 2px;
+    border: 1px solid #0066fe;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    }
+
+.beneficios{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.beneficios li{
+display: inline-block;
+margin-right: 0px;
+padding: 2px;
+border: 1px solid #0066fe;
+}
+
+.navbar{
+    position: absolute;
+    left: 13%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 80px; /*posicion de los botones */
+    color: #e8e8f0;
+    display:flex;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    background-color: #59692e65;
+    color: #bbe20d;
+    border-radius: 5px;
+    height: 0 auto;
+    box-shadow: 1px 1px 10px 1px rgb(183, 187, 173);
+}
+
+#menu{
+    display: none;
+}
+
+.eslogan{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #bbe20d;
+    margin-top: 130px;
+}
+
+
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between, 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-icon{
+    position: absolute;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    top: 37%;
+    right: 10px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+    
+}
+
+@media(max-width: 1100px){
+    .menu_content{
+        min-height: 70px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+    }
+    header{
+        height: 150px;
+    }
+    .contenedor_principal{
+        margin-top: 160px;
+    }
+    .menu{
+        top: 0;
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 13, 17, 0.647);
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+        
+    }
+    .eslogan{
+        display: none;
+    }
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+    
+
+
+#Acciones {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+    
+}
+
+#seguridad {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+
+}
+#preventivo {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+}
+#correctivo  {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+}
+#predictivo  {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+}
+#mantenimiento {
+    width: 400px;
+    height: 300px;
+    border-radius: 10% 20% 10% 20%;
+    box-shadow: 2px 2px 20px 2px rgb(188, 216, 113);
+}
+
+#piepagina{
+    position: fixed;
+    display: flex;
+    bottom: 1px;
+    right: 4px;
+    flex-direction: column;
+ text-align: right;
+ font-size: 7px;
+}
+#piepagina h4{
+    font-size: 7px;
+}
+.comentarios{
+    background-image: linear-gradient(to right, rgb(188, 216, 113), #00000083);
+    border-radius: 10px;
+    margin: 20px 5px;
+    width: 61%;
+    height: 40%;
+    padding: 10px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.575);
+}
+.coments{
+    display: block;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px ;
+    background-image: linear-gradient(to right, #ffffff, #0000007a);
+    font-size: 15px;
+}
+.btncoments {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px;
+    margin-top: 3%;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden; /* Asegura que el pseudo-elemento no sobresalga del botón */
+    background-color: rgb(48, 32, 173) ;
+    color: #fff; /* Color del texto */
+    z-index: 1; /* Asegura que el botón esté por encima del pseudo-elemento */
+}
+
+.btncoments::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    border-radius: 30em;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    background-image: linear-gradient(to left, #3ecb4a, #1d1a1a7a);
+    transition: width 1s ease;
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido del botón */
+}
+
+.btncoments:hover::before {
+    width: 300%;
+}
+
+.addcoment{
+    display: inline;
+    list-style: none;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.addcoment li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 50%;
+    background-image: linear-gradient(to right, #ffffff, #31131300);
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.addcoment li:hover{
+    background-image: linear-gradient(to right, #666666, #00000000);
+
+}
+.tasktext{
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.delete{
+    cursor: pointer;
+}
+
+.Bibliografia{
+   position: absolute;
+   left: 5px;
+   top: 250px;
+   position: fixed;
+   background-image: linear-gradient(to right, #ffffff, #0000007b);
+   border-radius: 3px;
+   box-shadow: 1px 1px 5px 1px black;
+   width: 15%;
+   padding: 5px;
+}
+.Bibliografia h4{
+    text-align: center;
+}
+.Bibliografia a{
+    color: #072a5f;
+}
+.Bibliografia ul{
+    flex-direction: column;
+}
+.contenedor_principal p{
+    font-size: 20px;
+}
+.contenedor_principal li{
+    font-size: 20px;
+}
+.contenedor_principal dd{
+    font-size: 20px;
+}
+.contenedor_principal dt{
+    font-size: 20px;
+}
+section{
+    border: rgb(0, 0, 0) 2px solid;
+    margin: 7px;
+    border-radius: 10px;
+    box-shadow: black 1px 5px 10px 5px;
+}
+main{
+    border: rgb(0, 0, 0) 2px solid;
+    margin: 7px;
+    border-radius: 10px;
+    box-shadow: black 1px 5px 10px 5px; 
+}
+h3{
+    text-align: center;
+}
+.photos .slider{
+left: 10%;
+margin: 5px;
+}
